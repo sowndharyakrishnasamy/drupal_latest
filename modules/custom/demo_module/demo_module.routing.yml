@@ -1,0 +1,9 @@
+demo_module.kill:
+ path: '/demo'
+ defaults: 
+  _controller: '\Drupal\demo_module\Controller\demoController::demo'
+  _title: 'demo module'
+ requirements:
+  _permission: 'access content'
+
+

@@ -1,0 +1,9 @@
+name: 'React Theme'
+description: 'Intergrating React and Drupal'
+type: theme
+core: 8.x
+base theme: bartik
+dependencies:
+  - core/drupal
+  - core/drupalSettings
+  - paragraphs

@@ -1,0 +1,15 @@
+react:
+  js:
+    https://unpkg.com/react@16/umd/react.production.min.js: { external: true, minified: true }
+    https://unpkg.com/react-dom@16/umd/react-dom.production.min.js: { external: true, minified: true }
+component:
+  version: 1.0
+  js:
+    js/main.js: {}
+    js/index.js: {}
+  css:
+    component:
+      css/main.css: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

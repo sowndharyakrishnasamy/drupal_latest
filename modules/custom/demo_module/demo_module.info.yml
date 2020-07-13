@@ -1,0 +1,4 @@
+name: demo module
+description: Trying to install new module
+type: module
+core: 8.x

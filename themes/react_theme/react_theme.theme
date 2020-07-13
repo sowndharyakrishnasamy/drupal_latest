@@ -1,0 +1,44 @@
+<?php
+use Drupal\image\Entity\ImageStyle;
+use Drupal\Core\Url;
+use Drupal\views\Views;
+use Drupal\node\Entity\NodeType;
+use Drupal\paragraphs\Entity\Paragraph;
+
+function react_theme_preprocess_paragraph(&$variables) {
+echo("jj");
+$variables['#attached']['library'] = [
+    'react_theme/react',
+    'react_theme/component',
+  ];
+  $variables['#attached']['drupalSettings']['example'] = 'value';
+}
+function react_theme_preprocess_node(&$variables) {
+    // $variables['#attached']['library'] = [
+    //     'react_theme/react',
+    //     'react_theme/component',
+    //   ];
+    //   $variables['#attached']['drupalSettings']['example'] = 'value';
+
+    // var_dump($variables['node']->getType());
+    // var_dump($variables['node']->get('field_message_title')->getValue()[0]['value']);
+    // die;    
+}
+// function react_theme_preprocess(&$variables,$hook) { 
+//     $variables['#attached']['library'] = [
+//         'react_theme/react',
+//         'react_theme/component',
+//       ];
+//     $variables['#attached']['drupalSettings']['example'] = 'value';
+
+//     // $variables['#attached']['library'] = [
+//     //     'react_theme/react',
+//     //     'react_theme/component',
+//     //   ];          
+//     // $variables['#attached']['drupalSettings']['messages'][1] =[
+//     //     'text' => 'value 1',
+//     //     'type' => 'value 3',
+//     //     'element' => 'react-message-1' ,
+//     //   ];
+//     }
+?>
